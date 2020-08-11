@@ -1,0 +1,599 @@
+body {
+    background-color: #eaeaea;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+
+}
+/* header */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 39px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav>li>a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #494949;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.nav>li {
+    padding-left: 29px;
+    margin-left: 23px;
+    position: relative;
+}
+
+.nav>li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.nav>li:first-child::before {
+    display: none;
+}
+
+.nav>li::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #494949;
+    display: block;
+    position: absolute;
+    left: 0;
+
+}
+
+/* banner */
+
+.banner {
+    background: url(../image/banner.png) center no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 256px 0 286px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 570px;
+    padding: 26px 0 25px;
+}
+
+.btn {
+    display: block;
+    border: 2px solid #fff;
+    padding: 16px 0;
+    font-size: 20px;
+    max-width: 193px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    transition: .5s;
+}
+
+.btn:hover {
+    text-shadow: 0px 0px 20px white;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: .5s;
+}
+
+
+.pizza {
+    position: absolute;
+    right: 0;
+    top: -260px;
+}
+
+/* page */
+
+.page {
+    padding: 123px 0 95px;
+}
+
+.h2 {
+    color: #282828;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding: 0 127px;
+    display: inline-block;
+
+
+}
+
+
+.h2::before,
+.h2::after {
+    content: '';
+    background-image: url(../image/item.png);
+    background-repeat: no-repeat;
+    width: 102px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    top: calc(50% - 14px);
+}
+
+.h2::before {
+    left: 0;
+}
+
+.h2::after {
+    right: 0;
+}
+
+.h2+p {
+    color: #959595;
+    font-family: 'Roboto', sans-serif;
+    padding: 21px 0 42px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 43px;
+}
+
+.menuLink {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.menuLink::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #494848;
+    position: absolute;
+    left: 0;
+
+}
+
+.menuLink:first-child::before {
+    display: none;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.menuLink>a {
+    color: #494848;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 17px;
+
+}
+
+.menuLink>a.active {
+    border-bottom: 4px solid #ee252d;
+    position: relative;
+}
+
+.menuLink>a.active::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #ee252d;
+}
+
+.createPizza {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+    background-color: #ffffff;
+    padding: 80px 0 59px 0;
+    margin-bottom: 70px;
+
+}
+
+.block {
+    padding: 0 0 0 55px;
+    box-sizing: content-box;
+}
+
+.number {
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0em;
+}
+
+.icon {
+    display: none;
+}
+
+.number::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+}
+
+.numberOne::after {
+    background-image: url(../image/icon_01.png);
+    width: 126px;
+    height: 71px;
+    left: 69px;
+    top: calc(50% - 35px);
+}
+
+.numberTwo::after {
+    background-image: url(../image/icon_02.png);
+    width: 184px;
+    height: 81px;
+    left: 88px;
+    top: calc(50% - 40px);
+
+
+}
+
+.numberThree::after {
+    background-image: url(../image/icon_03.png);
+    width: 142px;
+    height: 68px;
+    left: 94px;
+    top: calc(50% - 34px);
+
+
+}
+
+.textBlock {
+    padding-right: 55px;
+    border-right: 2px solid #eaeaea;
+}
+
+.block:last-child>.textBlock {
+    border-right: none;
+}
+
+.textBlock>h1 {
+    color: #282828;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 51px 0 23px;
+    white-space: nowrap;
+
+}
+
+.textBlock>p {
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.btnStart {
+    background-image: url(/image/bg.png);
+    padding: 29px 59px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 93px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 95px;
+}
+
+.btnStart:hover {
+    text-shadow: 0px 0px 20px white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* footer */
+
+footer {
+    background: url(../image/footer.png) no-repeat center;
+    padding: 46px 0;
+}
+
+footer p {
+    color: #eaeaea;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+/* media */
+
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .pizza {
+        display: none;
+    }
+
+    .banner {
+        padding: 35px 0 50px;
+
+    }
+
+    .banner>.container>.description,
+    .banner>.container>.title,
+    .banner>.container>.btn {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .page {
+        padding: 50px 0;
+    }
+
+    .h2 {
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .h2+p {
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .menuLink {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .createPizza {
+        flex-direction: column;
+        padding: 25px 0;
+    }
+
+    .block {
+        margin: 0 auto;
+        padding: 25px;
+
+    }
+
+    .number {
+        padding: 10px 0;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .icon01 {
+        width: 126px;
+        height: 71px;
+
+    }
+
+    .icon02 {
+        width: 184px;
+        height: 81px;
+    }
+
+    .icon03 {
+        width: 142px;
+        height: 68px;
+    }
+
+    .number::after {
+        display: none;
+    }
+
+    .textBlock {
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #aeaeae;
+    }
+
+    .block:last-child .textBlock {
+        border-bottom: none;
+    }
+
+    .textBlock>h1,
+    .textBlock>p {
+        padding: 0;
+        margin: 15px auto;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:769px) {
+    .navigation {
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .page,
+    .navigation,
+    .banner {
+        padding: 35px 0;
+    }
+
+    .nav>li:first-child {
+        padding: 5px 0;
+    }
+
+    .description {
+        font-size: 18px;
+        padding: 20px 0;
+        line-height: 25px;
+    }
+
+    .btn {
+        padding: 10px 0;
+        font-size: 13px;
+        max-width: 130px;
+    }
+
+    .menu,
+    .nav {
+        flex-wrap: wrap;
+        padding: 20px 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .menuLink::before,
+    .nav>li::before {
+        display: none;
+    }
+
+    .menuLink,
+    .nav>li {
+        padding: 5px 20px;
+        margin: 0;
+    }
+
+    .h2+p {
+        padding: 20px 0 0;
+        margin: 0;
+        line-height: 25px;
+    }
+
+    .nav>li>a,
+    .menuLink>a {
+        font-size: 13px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+
+    .menuLink>a.active::before {
+        border: none;
+    }
+
+    .menuLink>a.active,
+    .nav>li:active {
+        border-bottom: 2px solid #ee252d;
+    }
+
+    .createPizza {
+        margin-bottom: 35px;
+        padding: 10px 0;
+    }
+
+    .block {
+        padding: 10px 25px;
+    }
+
+    .number {
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .icon {
+        display: none;
+    }
+
+
+    .title {
+        font-size: 35px;
+    }
+
+    .textBlock>h1,
+    .textBlock>p {
+        margin: 5px auto;
+    }
+
+    .textBlock>h1 {
+        font-size: 25px;
+    }
+
+    .textBlock>p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .h2 {
+        padding: 0;
+    }
+
+    .h2::before,
+    .h2::after {
+        display: none;
+    }
+
+    .btnStart {
+        font-size: 18px;
+        background-size: contain;
+        padding: 15px 20px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
