@@ -22,6 +22,7 @@ ul {
     position: relative;
 
 }
+
 /* header */
 
 .navigation {
@@ -73,6 +74,10 @@ ul {
     position: absolute;
     left: 0;
 
+}
+
+.nav>li a:hover {
+    color: #ee252d;
 }
 
 /* banner */
